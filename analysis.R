@@ -1209,7 +1209,7 @@ FA_data_combined$Tract <- factor(
 )
 
 setwd("~/Documents/R")
-svglite("FA_blue_test.svg", width = 17, height = 6)
+svglite("FA_plot.svg", width = 17, height = 6)
 pirateplot(formula = FA ~ Tract + Dataset, data = FA_data_combined, main = "FA of Pathways Across Datasets",
            point.o = 0, cap.beans = 1, 
            pal = c("darkorange1", "purple4", "cadetblue1", "deeppink", "chartreuse1", "firebrick1"),
@@ -1293,7 +1293,7 @@ NoS_data_combined$Tract <- factor(
 )
 
 setwd("~/Documents/R")
-svglite("NoS_blue.svg", width = 17, height = 6)
+svglite("NoS_plot.svg", width = 17, height = 6)
 pirateplot(formula = NoS ~ Tract + Dataset, data = NoS_data_combined, main = "NoS of Pathways Across Datasets",
            point.o = 0, cap.beans = 1, 
            pal = c("darkorange1", "purple4", "cadetblue1", "deeppink", "chartreuse1", "firebrick1"),
